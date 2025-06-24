@@ -9,7 +9,7 @@
 using namespace std;
 
 int main () {
-    int income = 0, rent = 0, groceries = 0, invest = 0, clothes = 0, subscriptions = 0, healthcare = 0, savings = 0, sports = 0, other = 0;
+    double income = 0, rent = 0, groceries = 0, invest = 0, clothes = 0, subscriptions = 0, healthcare = 0, savings = 0, sports = 0, other = 0;
 
     cout << "You can enter your monthly income and expenses here to get a concise overview" << endl;
     cout << "What is your income?: ";
@@ -42,7 +42,8 @@ int main () {
     cout << "What is do you spent on other things?: ";
     cin >> other;
 
-    int expenses = rent + groceries + invest + clothes + subscriptions + healthcare + savings + sports + other;
-    cout << "Your total income is " << income << " and your total expenses are " << expenses << endl;
+    double expenses = rent + groceries + invest + clothes + subscriptions + healthcare + savings + sports + other;
+    double balance = income - expenses;
+    cout << "Your total income is " << income << " and your total expenses are " << expenses << " which gives a balance of " << balance << endl;
     return 0;
 }
