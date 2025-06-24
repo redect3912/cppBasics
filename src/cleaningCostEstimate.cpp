@@ -3,7 +3,7 @@
 using namespace std;
 
  int main () {
-    int priceSmall {25}, priceBig {35};
+    int const priceSmall {25}, priceBig {35};
     float taxRate {0.06f};
 
     cout << "Estimate for carpet cleaning service" << endl;
