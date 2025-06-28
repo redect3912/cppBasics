@@ -22,8 +22,9 @@ int main() {
     cout << "We use \"test_scores.push_back(80)\" for that" << endl;
     test_scores.push_back(80);
 
-    cout << "there is now a third element which is at index 2 and has value " << test_scores.at(2) << endl;
+    cout << "There are now " << test_scores.size() << " elements in the vector, the third of which is at index 2 and has value " << test_scores.at(2) << endl;
 
 
+    //cin >> test_scores.at(3); checks for bounds, out of range gives error message
     return 0;
 }
