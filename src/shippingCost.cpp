@@ -3,7 +3,7 @@
     Base cost  €2.50  
     +10 %  for volume 1501–7500 cm³  
     +25 %  for volume >7500 cm³  
-    maxHeight = maxWidth = maxHeight = 25 (cm)
+    maxLength = maxWidth = maxHeight = 25 (cm)
 */
 
 
@@ -14,6 +14,11 @@ using namespace std;
 int main() {
 
     int length{}, width{}, height{}; // parameters user inputs
+    cout << "Welcome to our shipping cost calculator!" << endl << endl;
+    cout << "Rates per volume in cm^3:" << endl << endl << 
+            "--- 0-1500 ---- standard 2.50 EUR. ---" << endl << 
+            "--- 1501-7500 - a 10% surcharge. -----" << endl << 
+            "--- >7500 ----- a 25% surcharge. -----" << endl << endl;
     cout << "Please enter the length, width and height of your package in cm with spaces: ";
     cin >> length >> width >> height;
 
@@ -31,9 +36,11 @@ int main() {
         }
         else if (packageVolume > tier0Max && packageVolume <= tier1Max) {
             packageCost = baseCost * 1.1;
+            cout << "A 10% surcharge is added. ";
         }
         else {
             packageCost = baseCost * 1.25;
+            cout << "A 25% surcharge is added. ";
         }
         cout << "Your shipping cost will be EUR: " << packageCost << endl;
     }
