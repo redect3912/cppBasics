@@ -1,4 +1,4 @@
-/* calculate total of all pairs of a user entered set */
+/* calculate total of sum of all unique pairs of a user entered set */
 #include <iostream>
 #include <vector>
 
