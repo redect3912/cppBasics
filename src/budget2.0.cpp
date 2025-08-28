@@ -8,7 +8,7 @@ int main () {
     cout << "What is your income?: ";
     int income{};
     cin >> income;
-    cout << "What do you want to budget for each category? Enter your answers with spaces inbetween" << endl
+    cout << "What do you want to budget for each category? Enter your answers 1 by 1 or with spaces inbetween" << endl
          << "1. Rent/Mortgage" << endl
          << "2. Car" << endl
          << "3. Groceries" << endl
@@ -87,3 +87,4 @@ int main () {
     return 0;
 
 }
+
