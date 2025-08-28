@@ -83,14 +83,7 @@ int main () {
             cout << budget[i] << "]" << endl;
         }
     }
-
-
-    bool changeEntries{false};
-    do {
-        cout << "Do you want to change any entries?: 1/0 ";
-        cin >> changeEntries;
-
-    } while (changeEntries == 1);
     
     return 0;
+
 }
